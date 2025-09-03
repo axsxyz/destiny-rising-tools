@@ -1,0 +1,4701 @@
+{
+  "metadata": {
+    "source": "game8.co (local HTML)",
+    "scraped_at": "2025-09-02T20:30:31.570Z",
+    "total_artifacts": 80,
+    "method": "artifact_scraper_dynamic_tiers",
+    "slot_distribution": {
+      "1": 20,
+      "2": 20,
+      "3": 20,
+      "4": 20
+    },
+    "category_distribution": {
+      "defense": 18,
+      "shield": 10,
+      "healing": 17,
+      "mobility": 1,
+      "offense": 26,
+      "weapon": 4,
+      "ability": 1,
+      "utility": 3
+    },
+    "mechanics_distribution": {
+      "stacking": 9,
+      "damage_reduction": 19,
+      "ability_enhancement": 12,
+      "weapon_enhancement": 16,
+      "shield": 18,
+      "healing": 32,
+      "conditional": 38,
+      "positional": 16,
+      "mobility": 10,
+      "temporal": 4,
+      "precision": 4,
+      "execution": 6,
+      "damage_amplification": 32,
+      "area_of_effect": 4,
+      "elemental": 3
+    },
+    "game8_tier_distribution": {
+      "S": 17,
+      "A": 25,
+      "B": 22,
+      "C": 16
+    },
+    "power_score_stats": {
+      "average": 21.4,
+      "max": 61.8,
+      "min": 0,
+      "range": 61.8
+    },
+    "features": [
+      "local_html_parsing",
+      "real_icon_urls_extracted",
+      "game8_tier_as_reference_only",
+      "dynamic_tier_system_ready",
+      "power_score_calculation",
+      "zero_duplicates",
+      "complete_artifact_coverage",
+      "enhanced_parsing_features"
+    ]
+  },
+  "artifacts": [
+    {
+      "id": "resolute_nutation",
+      "name": "Resolute Nutation",
+      "slot": 1,
+      "game8_tier": "S",
+      "effect": {
+        "description": "Weapon and ability hits grant 0.86% damage resistance for 3s. Stacks 10x.",
+        "parsed_values": {
+          "damage_resistance": 0.86,
+          "duration_seconds": 3,
+          "max_stacks": 10,
+          "max_damage_resistance": 8.6
+        },
+        "conditions": [],
+        "triggers": [
+          "Weapon and ability hits"
+        ]
+      },
+      "stats": {
+        "percentages": [
+          "0.86%"
+        ],
+        "durations": [
+          "3s"
+        ],
+        "stacks": {
+          "max_stacks": 10,
+          "stack_description": "Stacks 10x"
+        }
+      },
+      "categories": {
+        "primary": "defense",
+        "secondary": [
+          "stacking"
+        ],
+        "playstyle": [
+          "tank",
+          "sustain",
+          "caster",
+          "ramping"
+        ],
+        "trigger_type": "passive",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "tank builds",
+          "survivability",
+          "sustained combat",
+          "extended fights",
+          "ramping strategies"
+        ],
+        "synergizes_with": [
+          "ability cooldown reduction",
+          "caster builds",
+          "weapon-focused builds",
+          "high attack speed",
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [
+          "burst damage",
+          "quick fights"
+        ],
+        "skill_floor": "medium",
+        "skill_ceiling": "medium",
+        "power_score": 22.2
+      },
+      "mechanics": [
+        "stacking",
+        "damage_reduction",
+        "ability_enhancement",
+        "weapon_enhancement"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264182/d051957d55f495d004a0e0ead9141a9b.png/show",
+        "alt": "Resolute Nutation",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "inverted_guard",
+      "name": "Inverted Guard",
+      "slot": 1,
+      "game8_tier": "S",
+      "effect": {
+        "description": "Gain +31.5% shield when health falls below 17.5%.",
+        "parsed_values": {
+          "shield_value": 31.5,
+          "health_threshold": 17.5
+        },
+        "conditions": [
+          "when health falls below 17",
+          "below 17.5%"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "+31.5%",
+          "17.5%"
+        ]
+      },
+      "categories": {
+        "primary": "shield",
+        "secondary": [],
+        "playstyle": [],
+        "trigger_type": "conditional",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [],
+        "synergizes_with": [],
+        "countered_by": [
+          "healing builds",
+          "full health maintenance"
+        ],
+        "skill_floor": "medium",
+        "skill_ceiling": "high",
+        "power_score": 37.8
+      },
+      "mechanics": [
+        "shield",
+        "healing",
+        "conditional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264164/d6487eb684c05414233e4d34a2cd750c.png/show",
+        "alt": "Inverted Guard",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "impregnable_evolution",
+      "name": "Impregnable Evolution",
+      "slot": 1,
+      "game8_tier": "S",
+      "effect": {
+        "description": "Taking damage grants 1 stack of armored: take -0.63% damage. Stacks 20x. Lose 1 stack once every 1s once armored takes effect.",
+        "parsed_values": {
+          "damage_resistance": 0.63,
+          "duration_seconds": 1,
+          "cooldown_seconds": 1,
+          "max_stacks": 20,
+          "max_damage_resistance": 12.6
+        },
+        "conditions": [],
+        "triggers": [
+          "Taking damage grants 1 stack of armored: take -0"
+        ]
+      },
+      "stats": {
+        "percentages": [
+          "-0.63%"
+        ],
+        "durations": [
+          "1 s",
+          "1 s",
+          "1s"
+        ],
+        "stacks": {
+          "max_stacks": 20,
+          "stack_description": "Stacks 20x"
+        }
+      },
+      "categories": {
+        "primary": "defense",
+        "secondary": [
+          "stacking"
+        ],
+        "playstyle": [
+          "tank",
+          "sustain",
+          "ramping"
+        ],
+        "trigger_type": "on_damage_taken",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "tank builds",
+          "survivability",
+          "sustained combat",
+          "extended fights",
+          "ramping strategies"
+        ],
+        "synergizes_with": [
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [
+          "burst damage",
+          "quick fights"
+        ],
+        "skill_floor": "medium",
+        "skill_ceiling": "medium",
+        "power_score": 27.2
+      },
+      "mechanics": [
+        "stacking",
+        "damage_reduction"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264160/8bb2147ef9b8b36e2022a947d1538305.png/show",
+        "alt": "Impregnable Evolution",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "resolute_conjunction",
+      "name": "Resolute Conjunction",
+      "slot": 1,
+      "game8_tier": "S",
+      "effect": {
+        "description": "Take -12.25% damage from sources within 15m (includes sources 15m away).",
+        "parsed_values": {
+          "damage_resistance": 12.25,
+          "range_meters": 15
+        },
+        "conditions": [
+          "within 15m"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "-12.25%"
+        ],
+        "distances": [
+          "15m",
+          "15m"
+        ]
+      },
+      "categories": {
+        "primary": "defense",
+        "secondary": [],
+        "playstyle": [
+          "tank",
+          "sustain"
+        ],
+        "trigger_type": "passive",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "tank builds",
+          "survivability",
+          "sustained combat"
+        ],
+        "synergizes_with": [],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 24.5
+      },
+      "mechanics": [
+        "damage_reduction",
+        "positional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264181/1c8bc52b2f764c68589a98570234b7c9.png/show",
+        "alt": "Resolute Conjunction",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "healing_radiation",
+      "name": "Healing Radiation",
+      "slot": 1,
+      "game8_tier": "A",
+      "effect": {
+        "description": "Recover 1.05% health per second while within 20m of a target affected by debuffs (includes the wielder).",
+        "parsed_values": {
+          "healing_value": 1.05,
+          "range_meters": 20
+        },
+        "conditions": [
+          "while within 20m of a target affected by debuffs (includes the wielder)",
+          "within 20m"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "1.05%"
+        ],
+        "distances": [
+          "20m"
+        ]
+      },
+      "categories": {
+        "primary": "healing",
+        "secondary": [],
+        "playstyle": [],
+        "trigger_type": "conditional",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "support builds",
+          "team play"
+        ],
+        "synergizes_with": [],
+        "countered_by": [],
+        "skill_floor": "medium",
+        "skill_ceiling": "high",
+        "power_score": 1.6
+      },
+      "mechanics": [
+        "healing",
+        "conditional",
+        "positional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264156/dd92f2af2439e298dd02feeccd771d9b.png/show",
+        "alt": "Healing Radiation",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "nimble_veil",
+      "name": "Nimble Veil",
+      "slot": 1,
+      "game8_tier": "A",
+      "effect": {
+        "description": "Casting movement abilities reduces damage taken by 14.7% for 3s.",
+        "parsed_values": {
+          "damage_resistance": 14.7,
+          "damage_bonus": 14.7,
+          "duration_seconds": 3
+        },
+        "conditions": [],
+        "triggers": [
+          "Casting movement abilities reduces damage taken by 14"
+        ]
+      },
+      "stats": {
+        "percentages": [
+          "14.7%"
+        ],
+        "durations": [
+          "3s"
+        ]
+      },
+      "categories": {
+        "primary": "mobility",
+        "secondary": [],
+        "playstyle": [
+          "mobile"
+        ],
+        "trigger_type": "on_ability",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [],
+        "synergizes_with": [
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [],
+        "skill_floor": "medium",
+        "skill_ceiling": "medium",
+        "power_score": 61.8
+      },
+      "mechanics": [
+        "damage_reduction",
+        "mobility"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264173/0374651cba8fb7069b1838842de30fcf.png/show",
+        "alt": "Nimble Veil",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "ring_of_abundance",
+      "name": "Ring of Abundance",
+      "slot": 1,
+      "game8_tier": "A",
+      "effect": {
+        "description": "Grants +16.8% potency to healing and overshields received.",
+        "parsed_values": {},
+        "conditions": [],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "+16.8%"
+        ]
+      },
+      "categories": {
+        "primary": "shield",
+        "secondary": [],
+        "playstyle": [],
+        "trigger_type": "passive",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [],
+        "synergizes_with": [],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 0
+      },
+      "mechanics": [
+        "shield",
+        "healing"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264188/6a1107f553b4f24f81d1de3741335fc1.png/show",
+        "alt": "Ring of Abundance",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "talisman_of_revival",
+      "name": "Talisman of Revival",
+      "slot": 1,
+      "game8_tier": "A",
+      "effect": {
+        "description": "Healing a target to full health also restores 3.29% health every 2s for 8s afterwards.",
+        "parsed_values": {
+          "healing_value": 3.29,
+          "duration_seconds": 2,
+          "cooldown_seconds": 8
+        },
+        "conditions": [],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "3.29%"
+        ],
+        "durations": [
+          "2s",
+          "8s"
+        ]
+      },
+      "categories": {
+        "primary": "healing",
+        "secondary": [],
+        "playstyle": [],
+        "trigger_type": "passive",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "support builds",
+          "team play"
+        ],
+        "synergizes_with": [],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 6.9
+      },
+      "mechanics": [
+        "healing"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264202/9fe22884507bf7c422ee257f284c672e.png/show",
+        "alt": "Talisman of Revival",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "nourishing_pact",
+      "name": "Nourishing Pact",
+      "slot": 1,
+      "game8_tier": "B",
+      "effect": {
+        "description": "Summoning restores 7% health.",
+        "parsed_values": {
+          "healing_value": 7
+        },
+        "conditions": [],
+        "triggers": [
+          "Summoning restores 7% health"
+        ]
+      },
+      "stats": {
+        "percentages": [
+          "7%"
+        ]
+      },
+      "categories": {
+        "primary": "healing",
+        "secondary": [],
+        "playstyle": [
+          "summoner"
+        ],
+        "trigger_type": "passive",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "support builds",
+          "team play"
+        ],
+        "synergizes_with": [
+          "summoner builds",
+          "pet damage",
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [],
+        "skill_floor": "medium",
+        "skill_ceiling": "medium",
+        "power_score": 10.5
+      },
+      "mechanics": [
+        "healing"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264174/23b1369478c2e9aa219daf1ee6396a6d.png/show",
+        "alt": "Nourishing Pact",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "abundant_planetesimal",
+      "name": "Abundant Planetesimal",
+      "slot": 1,
+      "game8_tier": "B",
+      "effect": {
+        "description": "Casting signature abilities restores 0.86% health every second for 5s. Stacks 3x.",
+        "parsed_values": {
+          "healing_value": 0.86,
+          "duration_seconds": 5,
+          "max_stacks": 3
+        },
+        "conditions": [],
+        "triggers": [
+          "Casting signature abilities restores 0"
+        ]
+      },
+      "stats": {
+        "percentages": [
+          "0.86%"
+        ],
+        "durations": [
+          "5s"
+        ],
+        "stacks": {
+          "max_stacks": 3,
+          "stack_description": "Stacks 3x"
+        }
+      },
+      "categories": {
+        "primary": "healing",
+        "secondary": [
+          "stacking"
+        ],
+        "playstyle": [],
+        "trigger_type": "on_ability",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "support builds",
+          "team play"
+        ],
+        "synergizes_with": [
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [],
+        "skill_floor": "medium",
+        "skill_ceiling": "medium",
+        "power_score": 8.5
+      },
+      "mechanics": [
+        "stacking",
+        "healing",
+        "ability_enhancement"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264137/d333e8dadde40f5c4022aebb410295f3.png/show",
+        "alt": "Abundant Planetesimal",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "unrelenting_ground",
+      "name": "Unrelenting Ground",
+      "slot": 1,
+      "game8_tier": "B",
+      "effect": {
+        "description": "Take -11.2% damage while stationary.",
+        "parsed_values": {
+          "damage_resistance": 11.2
+        },
+        "conditions": [
+          "while stationary"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "-11.2%"
+        ]
+      },
+      "categories": {
+        "primary": "defense",
+        "secondary": [
+          "positional"
+        ],
+        "playstyle": [
+          "tank",
+          "sustain"
+        ],
+        "trigger_type": "conditional",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "tank builds",
+          "survivability",
+          "sustained combat"
+        ],
+        "synergizes_with": [],
+        "countered_by": [
+          "mobile enemies",
+          "forced movement"
+        ],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 22.4
+      },
+      "mechanics": [
+        "damage_reduction",
+        "conditional",
+        "positional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264205/2dd43a71dd89970469c21433cebec2d7.png/show",
+        "alt": "Unrelenting Ground",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "nimble_ground",
+      "name": "Nimble Ground",
+      "slot": 1,
+      "game8_tier": "B",
+      "effect": {
+        "description": "Take -7% damage while moving.",
+        "parsed_values": {
+          "damage_resistance": 7
+        },
+        "conditions": [
+          "while moving"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "-7%"
+        ]
+      },
+      "categories": {
+        "primary": "defense",
+        "secondary": [],
+        "playstyle": [
+          "tank",
+          "sustain"
+        ],
+        "trigger_type": "conditional",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "tank builds",
+          "survivability",
+          "sustained combat"
+        ],
+        "synergizes_with": [],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 14
+      },
+      "mechanics": [
+        "damage_reduction",
+        "conditional",
+        "positional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264172/4c0a3024181d3dceaf82025af6258b49.png/show",
+        "alt": "Nimble Ground",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "chiaroscuro",
+      "name": "Chiaroscuro",
+      "slot": 1,
+      "game8_tier": "B",
+      "effect": {
+        "description": "Take -8.75% damage, but receive -17.5% healing when health is greater than 50%.",
+        "parsed_values": {
+          "damage_resistance": 8.75,
+          "health_threshold": 50
+        },
+        "conditions": [
+          "when health is greater than 50%"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "-8.75%",
+          "-17.5%",
+          "50%"
+        ]
+      },
+      "categories": {
+        "primary": "defense",
+        "secondary": [],
+        "playstyle": [
+          "tank",
+          "sustain"
+        ],
+        "trigger_type": "conditional",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "tank builds",
+          "survivability",
+          "sustained combat"
+        ],
+        "synergizes_with": [],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 17.5
+      },
+      "mechanics": [
+        "damage_reduction",
+        "healing",
+        "conditional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264147/baa14894759b89f0f5cb9fec3b02efb6.png/show",
+        "alt": "Chiaroscuro",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "unrelenting_shell",
+      "name": "Unrelenting Shell",
+      "slot": 1,
+      "game8_tier": "C",
+      "effect": {
+        "description": "Reloading weapons grants +8.75% damage resistance for 3s.",
+        "parsed_values": {
+          "damage_resistance": 8.75,
+          "duration_seconds": 3
+        },
+        "conditions": [],
+        "triggers": [
+          "Reloading weapons grants +8"
+        ]
+      },
+      "stats": {
+        "percentages": [
+          "+8.75%"
+        ],
+        "durations": [
+          "3s"
+        ]
+      },
+      "categories": {
+        "primary": "defense",
+        "secondary": [
+          "reload"
+        ],
+        "playstyle": [
+          "tank",
+          "sustain"
+        ],
+        "trigger_type": "on_reload",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "tank builds",
+          "survivability",
+          "sustained combat"
+        ],
+        "synergizes_with": [
+          "weapon-focused builds",
+          "high attack speed",
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [],
+        "skill_floor": "medium",
+        "skill_ceiling": "medium",
+        "power_score": 20.5
+      },
+      "mechanics": [
+        "damage_reduction",
+        "weapon_enhancement"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264206/e3b4042bf1858f1a842cca0261c22eb0.png/show",
+        "alt": "Unrelenting Shell",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "warding_pact",
+      "name": "Warding Pact",
+      "slot": 1,
+      "game8_tier": "C",
+      "effect": {
+        "description": "For every summon on the field, gain 1 stack of ward: take -3.85% damage. Stacks 3x.",
+        "parsed_values": {
+          "damage_resistance": 3.85,
+          "duration_seconds": 1,
+          "max_stacks": 3,
+          "max_damage_resistance": 11.55
+        },
+        "conditions": [],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "-3.85%"
+        ],
+        "durations": [
+          "1 s"
+        ],
+        "stacks": {
+          "max_stacks": 3,
+          "stack_description": "Stacks 3x"
+        }
+      },
+      "categories": {
+        "primary": "defense",
+        "secondary": [
+          "stacking"
+        ],
+        "playstyle": [
+          "tank",
+          "sustain",
+          "summoner"
+        ],
+        "trigger_type": "passive",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "tank builds",
+          "survivability",
+          "sustained combat"
+        ],
+        "synergizes_with": [
+          "summoner builds",
+          "pet damage"
+        ],
+        "countered_by": [
+          "burst damage",
+          "quick fights"
+        ],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 28.2
+      },
+      "mechanics": [
+        "stacking",
+        "damage_reduction"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264219/d7a72f0b288ffd236ab6cd693d2e8c55.png/show",
+        "alt": "Warding Pact",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "healing_planetesimal",
+      "name": "Healing Planetesimal",
+      "slot": 1,
+      "game8_tier": "C",
+      "effect": {
+        "description": "Recover 10.5% health after casting any ability. Cooldown: 10s.",
+        "parsed_values": {
+          "healing_value": 10.5,
+          "duration_seconds": 10
+        },
+        "conditions": [
+          "after casting any ability"
+        ],
+        "triggers": [
+          "casting any ability"
+        ]
+      },
+      "stats": {
+        "percentages": [
+          "10.5%"
+        ],
+        "durations": [
+          "10s"
+        ]
+      },
+      "categories": {
+        "primary": "healing",
+        "secondary": [
+          "cooldown"
+        ],
+        "playstyle": [
+          "caster"
+        ],
+        "trigger_type": "on_ability",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "support builds",
+          "team play"
+        ],
+        "synergizes_with": [
+          "ability cooldown reduction",
+          "caster builds",
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [
+          "cooldown increase effects"
+        ],
+        "skill_floor": "medium",
+        "skill_ceiling": "high",
+        "power_score": 25.8
+      },
+      "mechanics": [
+        "healing",
+        "ability_enhancement",
+        "temporal"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264155/e85df368a8c96702b4d1f187fa3e7e0d.png/show",
+        "alt": "Healing Planetesimal",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "unrelenting_subgravity",
+      "name": "Unrelenting Subgravity",
+      "slot": 1,
+      "game8_tier": "C",
+      "effect": {
+        "description": "Take -10.5% damage while airborne.",
+        "parsed_values": {
+          "damage_resistance": 10.5
+        },
+        "conditions": [
+          "while airborne"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "-10.5%"
+        ]
+      },
+      "categories": {
+        "primary": "defense",
+        "secondary": [
+          "positional"
+        ],
+        "playstyle": [
+          "tank",
+          "sustain"
+        ],
+        "trigger_type": "conditional",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "tank builds",
+          "survivability",
+          "sustained combat"
+        ],
+        "synergizes_with": [],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 21
+      },
+      "mechanics": [
+        "damage_reduction",
+        "mobility",
+        "conditional",
+        "positional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264207/c35daf6db02e551a188d3b35f9e242ee.png/show",
+        "alt": "Unrelenting Subgravity",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "ring_of_healing",
+      "name": "Ring of Healing",
+      "slot": 1,
+      "game8_tier": "C",
+      "effect": {
+        "description": "Recover 1.54% health per second while protected by an overshield.",
+        "parsed_values": {
+          "healing_value": 1.54
+        },
+        "conditions": [
+          "while protected by an overshield"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "1.54%"
+        ]
+      },
+      "categories": {
+        "primary": "shield",
+        "secondary": [],
+        "playstyle": [],
+        "trigger_type": "conditional",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [],
+        "synergizes_with": [],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 2.3
+      },
+      "mechanics": [
+        "shield",
+        "healing",
+        "conditional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264191/b882c9ebbc39bf76b2a40c12a2d696db.png/show",
+        "alt": "Ring of Healing",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "upright_guard",
+      "name": "Upright Guard",
+      "slot": 1,
+      "game8_tier": "C",
+      "effect": {
+        "description": "Gain +32.2% health when shield falls below 17.5%.",
+        "parsed_values": {
+          "shield_value": 17.5,
+          "health_threshold": 32.2
+        },
+        "conditions": [
+          "when shield falls below 17",
+          "below 17.5%"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "+32.2%",
+          "17.5%"
+        ]
+      },
+      "categories": {
+        "primary": "shield",
+        "secondary": [],
+        "playstyle": [],
+        "trigger_type": "conditional",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [],
+        "synergizes_with": [],
+        "countered_by": [
+          "healing builds",
+          "full health maintenance"
+        ],
+        "skill_floor": "medium",
+        "skill_ceiling": "high",
+        "power_score": 21
+      },
+      "mechanics": [
+        "shield",
+        "healing",
+        "conditional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264210/6fefbf8af8c8adccbeb281080692383f.png/show",
+        "alt": "Upright Guard",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "impregnable_token",
+      "name": "Impregnable Token",
+      "slot": 1,
+      "game8_tier": "C",
+      "effect": {
+        "description": "Precision final blows grant a 238 overshield for 8s.",
+        "parsed_values": {
+          "duration_seconds": 8
+        },
+        "conditions": [],
+        "triggers": [
+          "final blows grant a 238 overshield for 8s"
+        ]
+      },
+      "stats": {
+        "durations": [
+          "8s"
+        ]
+      },
+      "categories": {
+        "primary": "shield",
+        "secondary": [
+          "precision",
+          "execution"
+        ],
+        "playstyle": [],
+        "trigger_type": "on_kill",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [],
+        "synergizes_with": [
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [],
+        "skill_floor": "medium",
+        "skill_ceiling": "medium",
+        "power_score": 8
+      },
+      "mechanics": [
+        "shield",
+        "precision",
+        "execution"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264162/eb8003d61da149d12c88e803eb4ca711.png/show",
+        "alt": "Impregnable Token",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "talisman_of_luxuriance",
+      "name": "Talisman of Luxuriance",
+      "slot": 2,
+      "game8_tier": "S",
+      "effect": {
+        "description": "Targets healed by the wielder's abilities also gain a 4.2% overshield lasting 6s for every 20% health they've lost.",
+        "parsed_values": {
+          "shield_value": 20,
+          "health_threshold": 20,
+          "duration_seconds": 6
+        },
+        "conditions": [],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "4.2%",
+          "20%"
+        ],
+        "durations": [
+          "6s"
+        ]
+      },
+      "categories": {
+        "primary": "shield",
+        "secondary": [],
+        "playstyle": [],
+        "trigger_type": "passive",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [],
+        "synergizes_with": [],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 30
+      },
+      "mechanics": [
+        "shield",
+        "healing"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264201/47b4bcc3e735129fe835bcd4dcbad54b.png/show",
+        "alt": "Talisman of Luxuriance",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "ring_of_safeguarding",
+      "name": "Ring of Safeguarding",
+      "slot": 2,
+      "game8_tier": "S",
+      "effect": {
+        "description": "Gain an overshield equal to 15.75% of max health when shield is broken, lasting 6s. Cooldown: 16s.",
+        "parsed_values": {
+          "shield_value": 15.75,
+          "health_threshold": 15.75,
+          "duration_seconds": 6,
+          "cooldown_seconds": 16
+        },
+        "conditions": [
+          "when shield is broken, lasting 6s"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "15.75%"
+        ],
+        "durations": [
+          "6s",
+          "16s"
+        ]
+      },
+      "categories": {
+        "primary": "shield",
+        "secondary": [
+          "cooldown"
+        ],
+        "playstyle": [],
+        "trigger_type": "conditional",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [],
+        "synergizes_with": [],
+        "countered_by": [
+          "cooldown increase effects"
+        ],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 24.9
+      },
+      "mechanics": [
+        "shield",
+        "healing",
+        "conditional",
+        "temporal"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264194/8c3691bf8ee6bfa0b6c635d33d84ea0d.png/show",
+        "alt": "Ring of Safeguarding",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "healing_veil",
+      "name": "Healing Veil",
+      "slot": 2,
+      "game8_tier": "A",
+      "effect": {
+        "description": "Casting movement abilities instantly restores 5.6% health.",
+        "parsed_values": {
+          "healing_value": 5.6
+        },
+        "conditions": [],
+        "triggers": [
+          "Casting movement abilities instantly restores 5"
+        ]
+      },
+      "stats": {
+        "percentages": [
+          "5.6%"
+        ]
+      },
+      "categories": {
+        "primary": "healing",
+        "secondary": [],
+        "playstyle": [
+          "mobile"
+        ],
+        "trigger_type": "on_ability",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "support builds",
+          "team play"
+        ],
+        "synergizes_with": [
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [],
+        "skill_floor": "medium",
+        "skill_ceiling": "medium",
+        "power_score": 8.4
+      },
+      "mechanics": [
+        "healing",
+        "mobility"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264158/c969635159c9ab346303118088ee88a0.png/show",
+        "alt": "Healing Veil",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "binging_planetesimal",
+      "name": "Binging Planetesimal",
+      "slot": 2,
+      "game8_tier": "A",
+      "effect": {
+        "description": "Dealing damage with signature abilities restores health equal to 7.7% of the damage dealt.",
+        "parsed_values": {
+          "damage_bonus": 7.7,
+          "healing_value": 7.7
+        },
+        "conditions": [],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "7.7%"
+        ]
+      },
+      "categories": {
+        "primary": "healing",
+        "secondary": [],
+        "playstyle": [],
+        "trigger_type": "passive",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "support builds",
+          "team play"
+        ],
+        "synergizes_with": [],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 27
+      },
+      "mechanics": [
+        "damage_amplification",
+        "healing",
+        "ability_enhancement"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264144/e6918f3c3b4b4fbb49e00d1caaa5f841.png/show",
+        "alt": "Binging Planetesimal",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "ring_of_conversion",
+      "name": "Ring of Conversion",
+      "slot": 2,
+      "game8_tier": "A",
+      "effect": {
+        "description": "28% of overflow healing from the wielder's own abilities is converted into an overshield that lasts 6s.",
+        "parsed_values": {
+          "duration_seconds": 6
+        },
+        "conditions": [],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "28%"
+        ],
+        "durations": [
+          "6s"
+        ]
+      },
+      "categories": {
+        "primary": "shield",
+        "secondary": [],
+        "playstyle": [],
+        "trigger_type": "passive",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [],
+        "synergizes_with": [],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 6
+      },
+      "mechanics": [
+        "shield",
+        "healing"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264189/fa2e1fb563b7b8cbbf396e660f49043e.png/show",
+        "alt": "Ring of Conversion",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "upright_tenacity",
+      "name": "Upright Tenacity",
+      "slot": 2,
+      "game8_tier": "A",
+      "effect": {
+        "description": "Gain +10.5% damage resistance when shield is broken.",
+        "parsed_values": {
+          "damage_resistance": 10.5,
+          "shield_value": 10.5
+        },
+        "conditions": [
+          "when shield is broken"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "+10.5%"
+        ]
+      },
+      "categories": {
+        "primary": "defense",
+        "secondary": [],
+        "playstyle": [
+          "tank",
+          "sustain"
+        ],
+        "trigger_type": "conditional",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "tank builds",
+          "survivability",
+          "sustained combat"
+        ],
+        "synergizes_with": [],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 33.6
+      },
+      "mechanics": [
+        "shield",
+        "damage_reduction",
+        "conditional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264212/007df3c69c14e53cbe10dafd10745bfd.png/show",
+        "alt": "Upright Tenacity",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "unrelenting_evolution",
+      "name": "Unrelenting Evolution",
+      "slot": 2,
+      "game8_tier": "A",
+      "effect": {
+        "description": "Gaining damage resistance effects other than armored grants an additional +15 stack of armored: take -0.63% damage. Stacks 20x. Lose 1 stack once every 1s once armored takes effect.",
+        "parsed_values": {
+          "damage_resistance": 0.63,
+          "duration_seconds": 15,
+          "cooldown_seconds": 1,
+          "max_stacks": 20,
+          "max_damage_resistance": 12.6
+        },
+        "conditions": [],
+        "triggers": [
+          "Gaining damage resistance effects other than armored grants an additional +15 stack of armored: take -0"
+        ]
+      },
+      "stats": {
+        "percentages": [
+          "-0.63%"
+        ],
+        "durations": [
+          "15 s",
+          "1 s",
+          "1s"
+        ],
+        "stacks": {
+          "max_stacks": 20,
+          "stack_description": "Stacks 20x"
+        }
+      },
+      "categories": {
+        "primary": "defense",
+        "secondary": [
+          "stacking"
+        ],
+        "playstyle": [
+          "tank",
+          "sustain",
+          "ramping"
+        ],
+        "trigger_type": "passive",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "tank builds",
+          "survivability",
+          "sustained combat",
+          "extended fights",
+          "ramping strategies"
+        ],
+        "synergizes_with": [
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [
+          "burst damage",
+          "quick fights"
+        ],
+        "skill_floor": "medium",
+        "skill_ceiling": "medium",
+        "power_score": 36.2
+      },
+      "mechanics": [
+        "stacking",
+        "damage_reduction"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264204/f976338ad122e6a6be7288523e88467b.png/show",
+        "alt": "Unrelenting Evolution",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "unrelenting_token",
+      "name": "Unrelenting Token",
+      "slot": 2,
+      "game8_tier": "A",
+      "effect": {
+        "description": "Take -12.95% damage while aiming down sights with piercing power weapons.",
+        "parsed_values": {
+          "damage_resistance": 12.95
+        },
+        "conditions": [
+          "while aiming down sights with piercing power weapons"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "-12.95%"
+        ]
+      },
+      "categories": {
+        "primary": "defense",
+        "secondary": [],
+        "playstyle": [
+          "tank",
+          "sustain"
+        ],
+        "trigger_type": "conditional",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "tank builds",
+          "survivability",
+          "sustained combat"
+        ],
+        "synergizes_with": [
+          "weapon-focused builds",
+          "high attack speed"
+        ],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 25.9
+      },
+      "mechanics": [
+        "damage_reduction",
+        "weapon_enhancement",
+        "conditional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264208/88d42c840ac336b40674e4a4e3873190.png/show",
+        "alt": "Unrelenting Token",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "resolute_radiation",
+      "name": "Resolute Radiation",
+      "slot": 2,
+      "game8_tier": "B",
+      "effect": {
+        "description": "Gain +8.75% damage resistance while affected by debuffs.",
+        "parsed_values": {
+          "damage_resistance": 8.75
+        },
+        "conditions": [
+          "while affected by debuffs"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "+8.75%"
+        ]
+      },
+      "categories": {
+        "primary": "defense",
+        "secondary": [],
+        "playstyle": [
+          "tank",
+          "sustain"
+        ],
+        "trigger_type": "conditional",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "tank builds",
+          "survivability",
+          "sustained combat"
+        ],
+        "synergizes_with": [],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 17.5
+      },
+      "mechanics": [
+        "damage_reduction",
+        "conditional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264183/990000932e85bd6e04b79a9f84655d7b.png/show",
+        "alt": "Resolute Radiation",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "inverted_tenacity",
+      "name": "Inverted Tenacity",
+      "slot": 2,
+      "game8_tier": "B",
+      "effect": {
+        "description": "Take -14% damage when health is below 13.3%.",
+        "parsed_values": {
+          "damage_resistance": 14,
+          "health_threshold": 13.3,
+          "damage_bonus": 13.3
+        },
+        "conditions": [
+          "when health is below 13",
+          "below 13.3%"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "-14%",
+          "13.3%"
+        ]
+      },
+      "categories": {
+        "primary": "defense",
+        "secondary": [],
+        "playstyle": [
+          "tank",
+          "sustain"
+        ],
+        "trigger_type": "conditional",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "tank builds",
+          "survivability",
+          "sustained combat"
+        ],
+        "synergizes_with": [],
+        "countered_by": [
+          "healing builds",
+          "full health maintenance"
+        ],
+        "skill_floor": "medium",
+        "skill_ceiling": "high",
+        "power_score": 54.6
+      },
+      "mechanics": [
+        "damage_reduction",
+        "healing",
+        "conditional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264167/0abaa2316aac49853870e7348b9e7d1c.png/show",
+        "alt": "Inverted Tenacity",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "healing_nutation",
+      "name": "Healing Nutation",
+      "slot": 2,
+      "game8_tier": "B",
+      "effect": {
+        "description": "After consecutively hitting the same target with more than 5 rounds, recover health on every subsequent hit equal to 9.44% of the initial weapon damage dealt.",
+        "parsed_values": {
+          "damage_bonus": 9.44
+        },
+        "conditions": [
+          "After consecutively hitting the same target with more than 5 rounds, recover health on every subsequent hit equal to 9"
+        ],
+        "triggers": [
+          "hitting the same target with more than 5 rounds, recover health on every subsequent hit equal to 9"
+        ]
+      },
+      "stats": {
+        "percentages": [
+          "9.44%"
+        ]
+      },
+      "categories": {
+        "primary": "healing",
+        "secondary": [],
+        "playstyle": [],
+        "trigger_type": "on_hit",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "support builds",
+          "team play"
+        ],
+        "synergizes_with": [
+          "weapon-focused builds",
+          "high attack speed",
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [],
+        "skill_floor": "medium",
+        "skill_ceiling": "high",
+        "power_score": 18.9
+      },
+      "mechanics": [
+        "healing",
+        "weapon_enhancement"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264154/13efaefe5f9e1833f6422766e7ed90e3.png/show",
+        "alt": "Healing Nutation",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "impregnable_pact",
+      "name": "Impregnable Pact",
+      "slot": 2,
+      "game8_tier": "B",
+      "effect": {
+        "description": "Summons restore 5.94% health when assisting in final blows.",
+        "parsed_values": {
+          "healing_value": 5.94
+        },
+        "conditions": [
+          "when assisting in final blows"
+        ],
+        "triggers": [
+          "final blows"
+        ]
+      },
+      "stats": {
+        "percentages": [
+          "5.94%"
+        ]
+      },
+      "categories": {
+        "primary": "healing",
+        "secondary": [
+          "execution"
+        ],
+        "playstyle": [
+          "summoner"
+        ],
+        "trigger_type": "on_kill",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "support builds",
+          "team play"
+        ],
+        "synergizes_with": [
+          "summoner builds",
+          "pet damage",
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [],
+        "skill_floor": "medium",
+        "skill_ceiling": "high",
+        "power_score": 8.9
+      },
+      "mechanics": [
+        "healing",
+        "conditional",
+        "execution"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264161/013c036f6a271d297b5c265b0df3f407.png/show",
+        "alt": "Impregnable Pact",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "fertile_ground",
+      "name": "Fertile Ground",
+      "slot": 2,
+      "game8_tier": "B",
+      "effect": {
+        "description": "Recover 1.4% health per second while stationary (effective only when health is below 100%).",
+        "parsed_values": {
+          "healing_value": 1.4,
+          "health_threshold": 100
+        },
+        "conditions": [
+          "when health is below 100%)",
+          "while stationary (effective only when health is below 100%)",
+          "below 100%"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "1.4%",
+          "100%"
+        ]
+      },
+      "categories": {
+        "primary": "healing",
+        "secondary": [
+          "positional"
+        ],
+        "playstyle": [],
+        "trigger_type": "conditional",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "support builds",
+          "team play"
+        ],
+        "synergizes_with": [],
+        "countered_by": [
+          "mobile enemies",
+          "forced movement",
+          "healing builds",
+          "full health maintenance"
+        ],
+        "skill_floor": "medium",
+        "skill_ceiling": "high",
+        "power_score": 0.6
+      },
+      "mechanics": [
+        "healing",
+        "conditional",
+        "positional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264150/c080a20a8c1176f3efbb280ba86d5a59.png/show",
+        "alt": "Fertile Ground",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "healing_ground",
+      "name": "Healing Ground",
+      "slot": 2,
+      "game8_tier": "B",
+      "effect": {
+        "description": "Final blows landed while moving on the ground restore 5.6% health.",
+        "parsed_values": {
+          "healing_value": 5.6
+        },
+        "conditions": [
+          "while moving on the ground restore 5"
+        ],
+        "triggers": [
+          "Final blows landed while moving on the ground restore 5"
+        ]
+      },
+      "stats": {
+        "percentages": [
+          "5.6%"
+        ]
+      },
+      "categories": {
+        "primary": "healing",
+        "secondary": [
+          "execution"
+        ],
+        "playstyle": [],
+        "trigger_type": "on_kill",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "support builds",
+          "team play"
+        ],
+        "synergizes_with": [
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [],
+        "skill_floor": "medium",
+        "skill_ceiling": "high",
+        "power_score": 8.4
+      },
+      "mechanics": [
+        "healing",
+        "conditional",
+        "execution",
+        "positional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264153/a03d2824a630d4712ad79dcd894693d2.png/show",
+        "alt": "Healing Ground",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "pranayama",
+      "name": "Pranayama",
+      "slot": 2,
+      "game8_tier": "B",
+      "effect": {
+        "description": "Natural health recovery interval is shortened by 24.5% while shielded.",
+        "parsed_values": {
+          "shield_value": 24.5
+        },
+        "conditions": [
+          "while shielded"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "24.5%"
+        ]
+      },
+      "categories": {
+        "primary": "shield",
+        "secondary": [],
+        "playstyle": [],
+        "trigger_type": "conditional",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [],
+        "synergizes_with": [],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 29.4
+      },
+      "mechanics": [
+        "shield",
+        "healing",
+        "conditional",
+        "temporal"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264175/b5facbcf061ed725e4f6518374955a00.png/show",
+        "alt": "Pranayama",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "healing_conjunction",
+      "name": "Healing Conjunction",
+      "slot": 2,
+      "game8_tier": "B",
+      "effect": {
+        "description": "After taking damage within 15m of the source, recover 1.82% health per second for 6s. Cooldown: 15s.",
+        "parsed_values": {
+          "healing_value": 1.82,
+          "duration_seconds": 6,
+          "cooldown_seconds": 15,
+          "range_meters": 15
+        },
+        "conditions": [
+          "After taking damage within 15m of the source, recover 1",
+          "within 15m"
+        ],
+        "triggers": [
+          "taking damage within 15m of the source, recover 1"
+        ]
+      },
+      "stats": {
+        "percentages": [
+          "1.82%"
+        ],
+        "durations": [
+          "6s",
+          "15s"
+        ],
+        "distances": [
+          "15m"
+        ]
+      },
+      "categories": {
+        "primary": "healing",
+        "secondary": [
+          "cooldown"
+        ],
+        "playstyle": [],
+        "trigger_type": "on_damage_taken",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "support builds",
+          "team play"
+        ],
+        "synergizes_with": [
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [
+          "cooldown increase effects"
+        ],
+        "skill_floor": "medium",
+        "skill_ceiling": "high",
+        "power_score": 7.2
+      },
+      "mechanics": [
+        "healing",
+        "temporal",
+        "positional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264152/4902179aff0dfbd5c33ee1ce016c935d.png/show",
+        "alt": "Healing Conjunction",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "bloodthirsty_shell",
+      "name": "Bloodthirsty Shell",
+      "slot": 2,
+      "game8_tier": "C",
+      "effect": {
+        "description": "Hitting multiple targets at the same time with spread weapons restores 14% health.",
+        "parsed_values": {
+          "healing_value": 14
+        },
+        "conditions": [],
+        "triggers": [
+          "Hitting multiple targets at the same time with spread weapons restores 14% health"
+        ]
+      },
+      "stats": {
+        "percentages": [
+          "14%"
+        ]
+      },
+      "categories": {
+        "primary": "healing",
+        "secondary": [],
+        "playstyle": [],
+        "trigger_type": "on_hit",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "support builds",
+          "team play"
+        ],
+        "synergizes_with": [
+          "weapon-focused builds",
+          "high attack speed",
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [],
+        "skill_floor": "medium",
+        "skill_ceiling": "medium",
+        "power_score": 21
+      },
+      "mechanics": [
+        "healing",
+        "weapon_enhancement",
+        "area_of_effect"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264145/38c7aa8134bfe714c68599c00afeaba5.png/show",
+        "alt": "Bloodthirsty Shell",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "siphoning_act",
+      "name": "Siphoning Act",
+      "slot": 2,
+      "game8_tier": "C",
+      "effect": {
+        "description": "Summons restore 5.94% health when assisting in final blows.",
+        "parsed_values": {
+          "healing_value": 5.94
+        },
+        "conditions": [
+          "when assisting in final blows"
+        ],
+        "triggers": [
+          "final blows"
+        ]
+      },
+      "stats": {
+        "percentages": [
+          "5.94%"
+        ]
+      },
+      "categories": {
+        "primary": "healing",
+        "secondary": [
+          "execution"
+        ],
+        "playstyle": [
+          "summoner"
+        ],
+        "trigger_type": "on_kill",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "support builds",
+          "team play"
+        ],
+        "synergizes_with": [
+          "summoner builds",
+          "pet damage",
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [],
+        "skill_floor": "medium",
+        "skill_ceiling": "high",
+        "power_score": 8.9
+      },
+      "mechanics": [
+        "healing",
+        "conditional",
+        "execution"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264197/28c77c032fbf8bcb7bec68bdce9cb4c1.png/show",
+        "alt": "Siphoning Act",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "retributive_planetesimal",
+      "name": "Retributive Planetesimal",
+      "slot": 2,
+      "game8_tier": "C",
+      "effect": {
+        "description": "Ability final blows restore 4.55% health. Defeating elite or stronger combatants restores 12.25% health.",
+        "parsed_values": {
+          "healing_value": 12.25
+        },
+        "conditions": [],
+        "triggers": [
+          "final blows restore 4"
+        ]
+      },
+      "stats": {
+        "percentages": [
+          "4.55%",
+          "12.25%"
+        ]
+      },
+      "categories": {
+        "primary": "healing",
+        "secondary": [
+          "execution"
+        ],
+        "playstyle": [
+          "caster"
+        ],
+        "trigger_type": "on_kill",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "support builds",
+          "team play"
+        ],
+        "synergizes_with": [
+          "ability cooldown reduction",
+          "caster builds",
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [],
+        "skill_floor": "medium",
+        "skill_ceiling": "medium",
+        "power_score": 18.4
+      },
+      "mechanics": [
+        "healing",
+        "ability_enhancement",
+        "execution"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264187/d1bfe64e74d664fe3241cdb11b12994e.png/show",
+        "alt": "Retributive Planetesimal",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "healing_subgravity",
+      "name": "Healing Subgravity",
+      "slot": 2,
+      "game8_tier": "C",
+      "effect": {
+        "description": "Airborne final blows restore 6.65% health.",
+        "parsed_values": {
+          "healing_value": 6.65
+        },
+        "conditions": [],
+        "triggers": [
+          "final blows restore 6"
+        ]
+      },
+      "stats": {
+        "percentages": [
+          "6.65%"
+        ]
+      },
+      "categories": {
+        "primary": "healing",
+        "secondary": [
+          "execution",
+          "positional"
+        ],
+        "playstyle": [],
+        "trigger_type": "on_kill",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "support builds",
+          "team play"
+        ],
+        "synergizes_with": [
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [],
+        "skill_floor": "medium",
+        "skill_ceiling": "medium",
+        "power_score": 10
+      },
+      "mechanics": [
+        "healing",
+        "mobility",
+        "execution",
+        "positional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264157/a4e4831529ffe99e307d351f74a53de3.png/show",
+        "alt": "Healing Subgravity",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "courageous_planetesimal",
+      "name": "Courageous Planetesimal",
+      "slot": 3,
+      "game8_tier": "S",
+      "effect": {
+        "description": "Casting any ability increases damage dealt by +6.3% for 10s.",
+        "parsed_values": {
+          "damage_bonus": 6.3,
+          "duration_seconds": 10
+        },
+        "conditions": [],
+        "triggers": [
+          "Casting any ability increases damage dealt by +6"
+        ]
+      },
+      "stats": {
+        "percentages": [
+          "+6.3%"
+        ],
+        "durations": [
+          "10s"
+        ]
+      },
+      "categories": {
+        "primary": "offense",
+        "secondary": [],
+        "playstyle": [
+          "dps",
+          "burst",
+          "caster"
+        ],
+        "trigger_type": "on_ability",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "dps builds",
+          "damage optimization"
+        ],
+        "synergizes_with": [
+          "ability cooldown reduction",
+          "caster builds",
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [],
+        "skill_floor": "medium",
+        "skill_ceiling": "medium",
+        "power_score": 22.6
+      },
+      "mechanics": [
+        "damage_amplification",
+        "ability_enhancement"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264148/734ff4c3f973d88abd6fb092a42baebf.png/show",
+        "alt": "Courageous Planetesimal",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "scattering_shell",
+      "name": "Scattering Shell",
+      "slot": 3,
+      "game8_tier": "S",
+      "effect": {
+        "description": "Hitting multiple targets at once grants the drawn weapon's next projectile +21% blast damage and blast radius.",
+        "parsed_values": {
+          "damage_bonus": 21
+        },
+        "conditions": [],
+        "triggers": [
+          "Hitting multiple targets at once grants the drawn weapon's next projectile +21% blast damage and blast radius"
+        ]
+      },
+      "stats": {
+        "percentages": [
+          "+21%"
+        ]
+      },
+      "categories": {
+        "primary": "weapon",
+        "secondary": [],
+        "playstyle": [],
+        "trigger_type": "on_hit",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [],
+        "synergizes_with": [
+          "weapon-focused builds",
+          "high attack speed",
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [],
+        "skill_floor": "medium",
+        "skill_ceiling": "medium",
+        "power_score": 42
+      },
+      "mechanics": [
+        "weapon_enhancement",
+        "area_of_effect"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264196/a43c735d06bd186fe30f4279a6fc6294.png/show",
+        "alt": "Scattering Shell",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "bellicose_precession",
+      "name": "Bellicose Precession",
+      "slot": 3,
+      "game8_tier": "S",
+      "effect": {
+        "description": "Hitting the same target 5 times grants the drawn weapon +12.95% rate of fire until the magazine is emptied or the weapon is reloaded.",
+        "parsed_values": {},
+        "conditions": [],
+        "triggers": [
+          "Hitting the same target 5 times grants the drawn weapon +12"
+        ]
+      },
+      "stats": {
+        "percentages": [
+          "+12.95%"
+        ]
+      },
+      "categories": {
+        "primary": "weapon",
+        "secondary": [
+          "reload"
+        ],
+        "playstyle": [],
+        "trigger_type": "on_hit",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [],
+        "synergizes_with": [
+          "weapon-focused builds",
+          "high attack speed",
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [],
+        "skill_floor": "medium",
+        "skill_ceiling": "medium",
+        "power_score": 0
+      },
+      "mechanics": [
+        "weapon_enhancement",
+        "elemental"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264140/8c81a70921802cd8e10851a850500627.png/show",
+        "alt": "Bellicose Precession",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "rampaging_pact",
+      "name": "Rampaging Pact",
+      "slot": 3,
+      "game8_tier": "S",
+      "effect": {
+        "description": "Summoning grants the wielder +11.55% damage bonus for 6s.",
+        "parsed_values": {
+          "damage_bonus": 11.55,
+          "duration_seconds": 6
+        },
+        "conditions": [],
+        "triggers": [
+          "Summoning grants the wielder +11"
+        ]
+      },
+      "stats": {
+        "percentages": [
+          "+11.55%"
+        ],
+        "durations": [
+          "6s"
+        ]
+      },
+      "categories": {
+        "primary": "offense",
+        "secondary": [],
+        "playstyle": [
+          "dps",
+          "burst",
+          "summoner"
+        ],
+        "trigger_type": "passive",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "dps builds",
+          "damage optimization"
+        ],
+        "synergizes_with": [
+          "summoner builds",
+          "pet damage",
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [],
+        "skill_floor": "medium",
+        "skill_ceiling": "medium",
+        "power_score": 29.1
+      },
+      "mechanics": [
+        "damage_amplification"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264177/3600ffa7669a388cb91d8df7daf3dc56.png/show",
+        "alt": "Rampaging Pact",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "talisman_of_unity",
+      "name": "Talisman of Unity",
+      "slot": 3,
+      "game8_tier": "S",
+      "effect": {
+        "description": "Healing a target to 100% health also grants them +3.5% damage bonus for 6s.",
+        "parsed_values": {
+          "health_threshold": 3.5,
+          "damage_bonus": 3.5,
+          "duration_seconds": 6
+        },
+        "conditions": [],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "100%",
+          "+3.5%"
+        ],
+        "durations": [
+          "6s"
+        ]
+      },
+      "categories": {
+        "primary": "offense",
+        "secondary": [],
+        "playstyle": [
+          "dps",
+          "burst"
+        ],
+        "trigger_type": "passive",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "dps builds",
+          "damage optimization"
+        ],
+        "synergizes_with": [],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 13
+      },
+      "mechanics": [
+        "damage_amplification",
+        "healing"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264203/e2daa05df834ce113351e45a7a069cb1.png/show",
+        "alt": "Talisman of Unity",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "bellicose_veil",
+      "name": "Bellicose Veil",
+      "slot": 3,
+      "game8_tier": "S",
+      "effect": {
+        "description": "Casting movement abilities grants the next signature ability +26.95% damage bonus for 3s.",
+        "parsed_values": {
+          "damage_bonus": 26.95,
+          "duration_seconds": 3
+        },
+        "conditions": [],
+        "triggers": [
+          "Casting movement abilities grants the next signature ability +26"
+        ]
+      },
+      "stats": {
+        "percentages": [
+          "+26.95%"
+        ],
+        "durations": [
+          "3s"
+        ]
+      },
+      "categories": {
+        "primary": "offense",
+        "secondary": [],
+        "playstyle": [
+          "dps",
+          "burst",
+          "caster",
+          "mobile"
+        ],
+        "trigger_type": "on_ability",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "dps builds",
+          "damage optimization"
+        ],
+        "synergizes_with": [
+          "ability cooldown reduction",
+          "caster builds",
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [],
+        "skill_floor": "medium",
+        "skill_ceiling": "medium",
+        "power_score": 56.9
+      },
+      "mechanics": [
+        "damage_amplification",
+        "ability_enhancement",
+        "mobility"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264143/a5ddf783dd06726a81eecdf1859b0065.png/show",
+        "alt": "Bellicose Veil",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "jolted_transit",
+      "name": "Jolted Transit",
+      "slot": 3,
+      "game8_tier": "S",
+      "effect": {
+        "description": "The drawn weapon deals -7% precision damage and +12.95% body shot damage.",
+        "parsed_values": {
+          "damage_bonus": 12.95
+        },
+        "conditions": [],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "-7%",
+          "+12.95%"
+        ]
+      },
+      "categories": {
+        "primary": "offense",
+        "secondary": [
+          "precision"
+        ],
+        "playstyle": [
+          "dps",
+          "burst"
+        ],
+        "trigger_type": "passive",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "dps builds",
+          "damage optimization"
+        ],
+        "synergizes_with": [
+          "weapon-focused builds",
+          "high attack speed"
+        ],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 25.9
+      },
+      "mechanics": [
+        "damage_amplification",
+        "weapon_enhancement",
+        "precision"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264169/e0bb10adf83e148a0f4f6d70b005c6a2.png/show",
+        "alt": "Jolted Transit",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "ring_of_morale",
+      "name": "Ring of Morale",
+      "slot": 3,
+      "game8_tier": "A",
+      "effect": {
+        "description": "Gaining an overshield grants +7% damage bonus for 6s.",
+        "parsed_values": {
+          "damage_bonus": 7,
+          "shield_value": 7,
+          "duration_seconds": 6
+        },
+        "conditions": [],
+        "triggers": [
+          "Gaining an overshield grants +7% damage bonus for 6s"
+        ]
+      },
+      "stats": {
+        "percentages": [
+          "+7%"
+        ],
+        "durations": [
+          "6s"
+        ]
+      },
+      "categories": {
+        "primary": "offense",
+        "secondary": [],
+        "playstyle": [
+          "dps",
+          "burst"
+        ],
+        "trigger_type": "passive",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "dps builds",
+          "damage optimization"
+        ],
+        "synergizes_with": [
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [],
+        "skill_floor": "medium",
+        "skill_ceiling": "medium",
+        "power_score": 28.4
+      },
+      "mechanics": [
+        "shield",
+        "damage_amplification"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264192/9f3bbb9e4eb84e1e9281277ad513b5f7.png/show",
+        "alt": "Ring of Morale",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "bellicose_pact",
+      "name": "Bellicose Pact",
+      "slot": 3,
+      "game8_tier": "A",
+      "effect": {
+        "description": "The wielder's summons deal +12.95% damage.",
+        "parsed_values": {
+          "damage_bonus": 12.95
+        },
+        "conditions": [],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "+12.95%"
+        ]
+      },
+      "categories": {
+        "primary": "offense",
+        "secondary": [],
+        "playstyle": [
+          "dps",
+          "burst",
+          "summoner"
+        ],
+        "trigger_type": "passive",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "dps builds",
+          "damage optimization"
+        ],
+        "synergizes_with": [
+          "summoner builds",
+          "pet damage"
+        ],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 25.9
+      },
+      "mechanics": [
+        "damage_amplification"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264138/4f4be7f21111a364f9983c4897ca2486.png/show",
+        "alt": "Bellicose Pact",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "vigilant_planetesimal",
+      "name": "Vigilant Planetesimal",
+      "slot": 3,
+      "game8_tier": "A",
+      "effect": {
+        "description": "Casting a signature ability increases the damage of the next signature ability cast within 6s by +17.5%. (signature abilities that have received this buff cannot trigger the buff for the next signature ability.)",
+        "parsed_values": {
+          "duration_seconds": 6
+        },
+        "conditions": [
+          "within 6s"
+        ],
+        "triggers": [
+          "Casting a signature ability increases the damage of the next signature ability cast within 6s by +17"
+        ]
+      },
+      "stats": {
+        "percentages": [
+          "+17.5%"
+        ],
+        "durations": [
+          "6s"
+        ]
+      },
+      "categories": {
+        "primary": "ability",
+        "secondary": [],
+        "playstyle": [
+          "caster"
+        ],
+        "trigger_type": "on_ability",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [],
+        "synergizes_with": [
+          "ability cooldown reduction",
+          "caster builds",
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [],
+        "skill_floor": "medium",
+        "skill_ceiling": "high",
+        "power_score": 6
+      },
+      "mechanics": [
+        "damage_amplification",
+        "ability_enhancement",
+        "positional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264218/fe129ebc7f3d987adb5bf1bc8ca34af1.png/show",
+        "alt": "Vigilant Planetesimal",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "valiant_subgravity",
+      "name": "Valiant Subgravity",
+      "slot": 3,
+      "game8_tier": "A",
+      "effect": {
+        "description": "Deal +7.7% damage while airborne.",
+        "parsed_values": {
+          "damage_bonus": 7.7
+        },
+        "conditions": [
+          "while airborne"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "+7.7%"
+        ]
+      },
+      "categories": {
+        "primary": "offense",
+        "secondary": [
+          "positional"
+        ],
+        "playstyle": [
+          "dps",
+          "burst"
+        ],
+        "trigger_type": "conditional",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "dps builds",
+          "damage optimization"
+        ],
+        "synergizes_with": [],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 15.4
+      },
+      "mechanics": [
+        "damage_amplification",
+        "mobility",
+        "conditional",
+        "positional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264216/5b8b6941286aec76f2c7592966f2f88a.png/show",
+        "alt": "Valiant Subgravity",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "ring_of_courage",
+      "name": "Ring of Courage",
+      "slot": 3,
+      "game8_tier": "A",
+      "effect": {
+        "description": "Take -3.5% damage and deal +7% damage while protected by an overshield.",
+        "parsed_values": {
+          "damage_resistance": 7,
+          "damage_bonus": 7
+        },
+        "conditions": [
+          "while protected by an overshield"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "-3.5%",
+          "+7%"
+        ]
+      },
+      "categories": {
+        "primary": "defense",
+        "secondary": [],
+        "playstyle": [
+          "tank",
+          "sustain"
+        ],
+        "trigger_type": "conditional",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "tank builds",
+          "survivability",
+          "sustained combat"
+        ],
+        "synergizes_with": [],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 28
+      },
+      "mechanics": [
+        "shield",
+        "damage_reduction",
+        "damage_amplification",
+        "conditional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264190/6faafe4affecb63d91d291c78748afe0.png/show",
+        "alt": "Ring of Courage",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "inverted_fury",
+      "name": "Inverted Fury",
+      "slot": 3,
+      "game8_tier": "A",
+      "effect": {
+        "description": "Gain +10.5% weapon damage bonus while shielded.",
+        "parsed_values": {
+          "damage_bonus": 10.5
+        },
+        "conditions": [
+          "while shielded"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "+10.5%"
+        ]
+      },
+      "categories": {
+        "primary": "offense",
+        "secondary": [],
+        "playstyle": [
+          "dps",
+          "burst"
+        ],
+        "trigger_type": "conditional",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "dps builds",
+          "damage optimization"
+        ],
+        "synergizes_with": [
+          "weapon-focused builds",
+          "high attack speed"
+        ],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 21
+      },
+      "mechanics": [
+        "shield",
+        "damage_amplification",
+        "weapon_enhancement",
+        "conditional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264163/83013fe7e37da3c561567bbb7bd21e46.png/show",
+        "alt": "Inverted Fury",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "predator_evolution",
+      "name": "Predator Evolution",
+      "slot": 3,
+      "game8_tier": "A",
+      "effect": {
+        "description": "Gaining damage resistance triggers offense-defense integration: deal +1.05% damage for 6s. Stacks 5x.",
+        "parsed_values": {
+          "damage_bonus": 1.05,
+          "duration_seconds": 6,
+          "max_stacks": 5,
+          "max_damage_bonus": 5.25
+        },
+        "conditions": [],
+        "triggers": [
+          "Gaining damage resistance triggers offense-defense integration: deal +1"
+        ]
+      },
+      "stats": {
+        "percentages": [
+          "+1.05%"
+        ],
+        "durations": [
+          "6s"
+        ],
+        "stacks": {
+          "max_stacks": 5,
+          "stack_description": "Stacks 5x"
+        }
+      },
+      "categories": {
+        "primary": "defense",
+        "secondary": [
+          "stacking"
+        ],
+        "playstyle": [
+          "tank",
+          "sustain"
+        ],
+        "trigger_type": "passive",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "tank builds",
+          "survivability",
+          "sustained combat"
+        ],
+        "synergizes_with": [
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [
+          "burst damage",
+          "quick fights"
+        ],
+        "skill_floor": "medium",
+        "skill_ceiling": "medium",
+        "power_score": 19.2
+      },
+      "mechanics": [
+        "stacking",
+        "damage_reduction",
+        "damage_amplification"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264176/cd3de7a94fb052f2fe3d52f513f19bcb.png/show",
+        "alt": "Predator Evolution",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "calming_token",
+      "name": "Calming Token",
+      "slot": 3,
+      "game8_tier": "A",
+      "effect": {
+        "description": "Shots fired while stationary gain +3.5 accuracy and +16.1% precision damage.",
+        "parsed_values": {
+          "damage_bonus": 16.1
+        },
+        "conditions": [
+          "while stationary gain +3"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "+16.1%"
+        ]
+      },
+      "categories": {
+        "primary": "utility",
+        "secondary": [
+          "precision",
+          "positional"
+        ],
+        "playstyle": [],
+        "trigger_type": "conditional",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [],
+        "synergizes_with": [],
+        "countered_by": [
+          "mobile enemies",
+          "forced movement"
+        ],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 32.2
+      },
+      "mechanics": [
+        "conditional",
+        "precision",
+        "elemental",
+        "positional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264146/970aaa61c5a91c17c981196cfdf3253e.png/show",
+        "alt": "Calming Token",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "valiant_ground",
+      "name": "Valiant Ground",
+      "slot": 3,
+      "game8_tier": "B",
+      "effect": {
+        "description": "Deal +7.7% damage while sprinting.",
+        "parsed_values": {
+          "damage_bonus": 7.7
+        },
+        "conditions": [
+          "while sprinting"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "+7.7%"
+        ]
+      },
+      "categories": {
+        "primary": "offense",
+        "secondary": [],
+        "playstyle": [
+          "dps",
+          "burst"
+        ],
+        "trigger_type": "conditional",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "dps builds",
+          "damage optimization"
+        ],
+        "synergizes_with": [],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 15.4
+      },
+      "mechanics": [
+        "damage_amplification",
+        "conditional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264215/16dba3b74967ea551976cb68b3bc8070.png/show",
+        "alt": "Valiant Ground",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "mysterious_submagnetism",
+      "name": "Mysterious Submagnetism",
+      "slot": 3,
+      "game8_tier": "B",
+      "effect": {
+        "description": "Deal +8.75% damage while stationary, but deal -1.75% damage while moving.",
+        "parsed_values": {
+          "damage_bonus": 8.75
+        },
+        "conditions": [
+          "while stationary, but deal -1",
+          "while moving"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "+8.75%",
+          "-1.75%"
+        ]
+      },
+      "categories": {
+        "primary": "offense",
+        "secondary": [
+          "positional"
+        ],
+        "playstyle": [
+          "dps",
+          "burst"
+        ],
+        "trigger_type": "conditional",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "dps builds",
+          "damage optimization"
+        ],
+        "synergizes_with": [],
+        "countered_by": [
+          "mobile enemies",
+          "forced movement"
+        ],
+        "skill_floor": "medium",
+        "skill_ceiling": "high",
+        "power_score": 17.5
+      },
+      "mechanics": [
+        "damage_amplification",
+        "conditional",
+        "positional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264171/2ad76706c9af368ed0f9460976a8c464.png/show",
+        "alt": "Mysterious Submagnetism",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "upright_vengeance",
+      "name": "Upright Vengeance",
+      "slot": 3,
+      "game8_tier": "B",
+      "effect": {
+        "description": "Gain +1.75% damage bonus for every 10% health lost.",
+        "parsed_values": {
+          "damage_bonus": 10,
+          "health_threshold": 10
+        },
+        "conditions": [],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "+1.75%",
+          "10%"
+        ]
+      },
+      "categories": {
+        "primary": "offense",
+        "secondary": [],
+        "playstyle": [
+          "dps",
+          "burst"
+        ],
+        "trigger_type": "passive",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "dps builds",
+          "damage optimization"
+        ],
+        "synergizes_with": [],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 20
+      },
+      "mechanics": [
+        "damage_amplification",
+        "healing"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264214/0878b07bdac3b9e6d2da34abd54200c0.png/show",
+        "alt": "Upright Vengeance",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "bellicose_radiation",
+      "name": "Bellicose Radiation",
+      "slot": 3,
+      "game8_tier": "C",
+      "effect": {
+        "description": "While affected by a damage over time effect, take -17.5% damage from damage over time effects, and deal +5.25% damage.",
+        "parsed_values": {
+          "damage_resistance": 17.5,
+          "damage_bonus": 5.25
+        },
+        "conditions": [
+          "While affected by a damage over time effect, take -17"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "-17.5%",
+          "+5.25%"
+        ]
+      },
+      "categories": {
+        "primary": "defense",
+        "secondary": [],
+        "playstyle": [
+          "tank",
+          "sustain"
+        ],
+        "trigger_type": "conditional",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "tank builds",
+          "survivability",
+          "sustained combat"
+        ],
+        "synergizes_with": [],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 45.5
+      },
+      "mechanics": [
+        "damage_reduction",
+        "damage_amplification",
+        "conditional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264141/d057a7b9d24828795b50297862e423d4.png/show",
+        "alt": "Bellicose Radiation",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "upright_fury",
+      "name": "Upright Fury",
+      "slot": 3,
+      "game8_tier": "C",
+      "effect": {
+        "description": "When no longer critically wounded, deal +8.75% damage for 6s.",
+        "parsed_values": {
+          "damage_bonus": 8.75,
+          "duration_seconds": 6
+        },
+        "conditions": [
+          "When no longer critically wounded, deal +8"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "+8.75%"
+        ],
+        "durations": [
+          "6s"
+        ]
+      },
+      "categories": {
+        "primary": "offense",
+        "secondary": [],
+        "playstyle": [
+          "dps",
+          "burst"
+        ],
+        "trigger_type": "conditional",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "dps builds",
+          "damage optimization"
+        ],
+        "synergizes_with": [],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 23.5
+      },
+      "mechanics": [
+        "damage_amplification",
+        "conditional",
+        "precision"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264209/536ff2bf7c0e260b3b686d1b310a85be.png/show",
+        "alt": "Upright Fury",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "valiant_veil",
+      "name": "Valiant Veil",
+      "slot": 4,
+      "game8_tier": "S",
+      "effect": {
+        "description": "Casting movement abilities grants +8.75% damage bonus for 5s.",
+        "parsed_values": {
+          "damage_bonus": 8.75,
+          "duration_seconds": 5
+        },
+        "conditions": [],
+        "triggers": [
+          "Casting movement abilities grants +8"
+        ]
+      },
+      "stats": {
+        "percentages": [
+          "+8.75%"
+        ],
+        "durations": [
+          "5s"
+        ]
+      },
+      "categories": {
+        "primary": "offense",
+        "secondary": [],
+        "playstyle": [
+          "dps",
+          "burst",
+          "mobile"
+        ],
+        "trigger_type": "on_ability",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "dps builds",
+          "damage optimization"
+        ],
+        "synergizes_with": [
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [],
+        "skill_floor": "medium",
+        "skill_ceiling": "medium",
+        "power_score": 22.5
+      },
+      "mechanics": [
+        "damage_amplification",
+        "mobility"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264217/54b9e4f8e2a1dc725baf12e3fc28d0ff.png/show",
+        "alt": "Valiant Veil",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "rampaging_precession",
+      "name": "Rampaging Precession",
+      "slot": 4,
+      "game8_tier": "S",
+      "effect": {
+        "description": "Reloading after the previous magazine lands at least 10 hits grants the weapon + 14% damage bonus.",
+        "parsed_values": {
+          "damage_bonus": 14
+        },
+        "conditions": [
+          "after the previous magazine lands at least 10 hits grants the weapon + 14% damage bonus"
+        ],
+        "triggers": [
+          "Reloading after the previous magazine lands at least 10 hits grants the weapon + 14% damage bonus"
+        ]
+      },
+      "stats": {
+        "percentages": [
+          "14%"
+        ]
+      },
+      "categories": {
+        "primary": "offense",
+        "secondary": [
+          "reload"
+        ],
+        "playstyle": [
+          "dps",
+          "burst"
+        ],
+        "trigger_type": "on_reload",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "dps builds",
+          "damage optimization"
+        ],
+        "synergizes_with": [
+          "weapon-focused builds",
+          "high attack speed",
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [],
+        "skill_floor": "medium",
+        "skill_ceiling": "high",
+        "power_score": 28
+      },
+      "mechanics": [
+        "damage_amplification",
+        "weapon_enhancement"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264179/c5262e9da204bab1db9fa2857bb02a97.png/show",
+        "alt": "Rampaging Precession",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "responsive_pact",
+      "name": "Responsive Pact",
+      "slot": 4,
+      "game8_tier": "S",
+      "effect": {
+        "description": "Casting signature abilities grants summons +14% attack damage for 6s.",
+        "parsed_values": {
+          "damage_bonus": 14,
+          "duration_seconds": 6
+        },
+        "conditions": [],
+        "triggers": [
+          "Casting signature abilities grants summons +14% attack damage for 6s"
+        ]
+      },
+      "stats": {
+        "percentages": [
+          "+14%"
+        ],
+        "durations": [
+          "6s"
+        ]
+      },
+      "categories": {
+        "primary": "utility",
+        "secondary": [],
+        "playstyle": [
+          "summoner"
+        ],
+        "trigger_type": "on_ability",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [],
+        "synergizes_with": [
+          "summoner builds",
+          "pet damage",
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [],
+        "skill_floor": "medium",
+        "skill_ceiling": "medium",
+        "power_score": 34
+      },
+      "mechanics": [
+        "ability_enhancement"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264186/da20ac47ccf56cdc86051128253ef308.png/show",
+        "alt": "Responsive Pact",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "bellicose_planetesimal",
+      "name": "Bellicose Planetesimal",
+      "slot": 4,
+      "game8_tier": "S",
+      "effect": {
+        "description": "Casting signature abilities grants +10.5 % weapon damage for 6s.",
+        "parsed_values": {
+          "duration_seconds": 6
+        },
+        "conditions": [],
+        "triggers": [
+          "Casting signature abilities grants +10"
+        ]
+      },
+      "stats": {
+        "durations": [
+          "6s"
+        ]
+      },
+      "categories": {
+        "primary": "weapon",
+        "secondary": [],
+        "playstyle": [],
+        "trigger_type": "on_ability",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [],
+        "synergizes_with": [
+          "weapon-focused builds",
+          "high attack speed",
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [],
+        "skill_floor": "medium",
+        "skill_ceiling": "medium",
+        "power_score": 6
+      },
+      "mechanics": [
+        "ability_enhancement",
+        "weapon_enhancement"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264139/d466ffb62eef288b091992ea95013dfd.png/show",
+        "alt": "Bellicose Planetesimal",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "ring_of_reflection",
+      "name": "Ring of Reflection",
+      "slot": 4,
+      "game8_tier": "A",
+      "effect": {
+        "description": "Gain damage bonus equal to (overshield value/max health) × 24.5% while protected by an overshield, for a max damage bonus of 8.75%.",
+        "parsed_values": {
+          "shield_value": 24.5,
+          "health_threshold": 24.5,
+          "damage_bonus": 8.75
+        },
+        "conditions": [
+          "while protected by an overshield, for a max damage bonus of 8"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "24.5%",
+          "8.75%"
+        ]
+      },
+      "categories": {
+        "primary": "offense",
+        "secondary": [],
+        "playstyle": [
+          "dps",
+          "burst"
+        ],
+        "trigger_type": "conditional",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "dps builds",
+          "damage optimization"
+        ],
+        "synergizes_with": [],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 46.9
+      },
+      "mechanics": [
+        "shield",
+        "damage_amplification",
+        "healing",
+        "conditional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264193/8af182267e57b636f208db739bb2bc3a.png/show",
+        "alt": "Ring of Reflection",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "explosive_shell",
+      "name": "Explosive Shell",
+      "slot": 4,
+      "game8_tier": "A",
+      "effect": {
+        "description": "Projectiles gain +16.8% blast damage and +16.8% blast radius on direct hits.",
+        "parsed_values": {
+          "damage_bonus": 16.8
+        },
+        "conditions": [],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "+16.8%",
+          "+16.8%"
+        ]
+      },
+      "categories": {
+        "primary": "utility",
+        "secondary": [],
+        "playstyle": [],
+        "trigger_type": "passive",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [],
+        "synergizes_with": [],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 33.6
+      },
+      "mechanics": [
+        "area_of_effect"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264149/cb8c79428a0f2dd1df74bad816361809.png/show",
+        "alt": "Explosive Shell",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "resonating_pact",
+      "name": "Resonating Pact",
+      "slot": 4,
+      "game8_tier": "A",
+      "effect": {
+        "description": "When summons attack the same target as the wielder, they deal +16.45% damage.",
+        "parsed_values": {
+          "damage_bonus": 16.45
+        },
+        "conditions": [
+          "When summons attack the same target as the wielder, they deal +16"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "+16.45%"
+        ]
+      },
+      "categories": {
+        "primary": "offense",
+        "secondary": [],
+        "playstyle": [
+          "dps",
+          "burst",
+          "summoner"
+        ],
+        "trigger_type": "conditional",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "dps builds",
+          "damage optimization"
+        ],
+        "synergizes_with": [
+          "summoner builds",
+          "pet damage"
+        ],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 32.9
+      },
+      "mechanics": [
+        "damage_amplification",
+        "conditional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264184/b46715d9b37eda5d34d552e2b87b3e0a.png/show",
+        "alt": "Resonating Pact",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "rampaging_planetesimal",
+      "name": "Rampaging Planetesimal",
+      "slot": 4,
+      "game8_tier": "A",
+      "effect": {
+        "description": "Dealing damage to targets within a 15-meter radius grants +1.4% signature ability damage bonus for 10s. Stacks 10x.",
+        "parsed_values": {
+          "damage_bonus": 1.4,
+          "duration_seconds": 10,
+          "max_stacks": 10,
+          "max_damage_bonus": 14
+        },
+        "conditions": [],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "+1.4%"
+        ],
+        "durations": [
+          "10s"
+        ],
+        "stacks": {
+          "max_stacks": 10,
+          "stack_description": "Stacks 10x"
+        }
+      },
+      "categories": {
+        "primary": "offense",
+        "secondary": [
+          "stacking"
+        ],
+        "playstyle": [
+          "dps",
+          "burst",
+          "caster",
+          "ramping"
+        ],
+        "trigger_type": "passive",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "dps builds",
+          "damage optimization",
+          "extended fights",
+          "ramping strategies"
+        ],
+        "synergizes_with": [
+          "ability cooldown reduction",
+          "caster builds"
+        ],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 38.4
+      },
+      "mechanics": [
+        "stacking",
+        "damage_amplification",
+        "ability_enhancement",
+        "area_of_effect",
+        "positional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264178/5e6cf9c6fdeaea44842e1417cb8a698f.png/show",
+        "alt": "Rampaging Planetesimal",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "ring_of_vengeance",
+      "name": "Ring of Vengeance",
+      "slot": 4,
+      "game8_tier": "A",
+      "effect": {
+        "description": "Taking hits while protected by an overshield grants +0.86% damage bonus for 6s. Stacks 10x.",
+        "parsed_values": {
+          "damage_bonus": 0.86,
+          "shield_value": 0.86,
+          "duration_seconds": 6,
+          "max_stacks": 10,
+          "max_damage_bonus": 8.6
+        },
+        "conditions": [
+          "while protected by an overshield grants +0"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "+0.86%"
+        ],
+        "durations": [
+          "6s"
+        ],
+        "stacks": {
+          "max_stacks": 10,
+          "stack_description": "Stacks 10x"
+        }
+      },
+      "categories": {
+        "primary": "offense",
+        "secondary": [
+          "stacking"
+        ],
+        "playstyle": [
+          "dps",
+          "burst",
+          "ramping"
+        ],
+        "trigger_type": "conditional",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "dps builds",
+          "damage optimization",
+          "extended fights",
+          "ramping strategies"
+        ],
+        "synergizes_with": [],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 26.3
+      },
+      "mechanics": [
+        "stacking",
+        "shield",
+        "damage_amplification",
+        "conditional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264195/8ab103421aedd6f0b6df2af0f3fcc4da.png/show",
+        "alt": "Ring of Vengeance",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "sympathetic_evolution",
+      "name": "Sympathetic Evolution",
+      "slot": 4,
+      "game8_tier": "A",
+      "effect": {
+        "description": "Deal +2.45% damage for every damage resistance buff currently applied.",
+        "parsed_values": {
+          "damage_bonus": 2.45
+        },
+        "conditions": [],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "+2.45%"
+        ]
+      },
+      "categories": {
+        "primary": "defense",
+        "secondary": [],
+        "playstyle": [
+          "tank",
+          "sustain"
+        ],
+        "trigger_type": "passive",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "tank builds",
+          "survivability",
+          "sustained combat"
+        ],
+        "synergizes_with": [],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 4.9
+      },
+      "mechanics": [
+        "damage_reduction",
+        "damage_amplification"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264198/7834f27f362131131c2594aecfca4300.png/show",
+        "alt": "Sympathetic Evolution",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "hawkeye_token",
+      "name": "Hawkeye Token",
+      "slot": 4,
+      "game8_tier": "A",
+      "effect": {
+        "description": "When hitting targets more than 20m away, weapons deal higher damage based on how far away they are, up to +16.8%.",
+        "parsed_values": {
+          "range_meters": 20
+        },
+        "conditions": [
+          "When hitting targets more than 20m away, weapons deal higher damage based on how far away they are, up to +16"
+        ],
+        "triggers": [
+          "hitting targets more than 20m away, weapons deal higher damage based on how far away they are, up to +16"
+        ]
+      },
+      "stats": {
+        "percentages": [
+          "+16.8%"
+        ],
+        "distances": [
+          "20m"
+        ]
+      },
+      "categories": {
+        "primary": "offense",
+        "secondary": [],
+        "playstyle": [
+          "dps",
+          "burst"
+        ],
+        "trigger_type": "on_hit",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "dps builds",
+          "damage optimization"
+        ],
+        "synergizes_with": [
+          "weapon-focused builds",
+          "high attack speed",
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [],
+        "skill_floor": "medium",
+        "skill_ceiling": "high",
+        "power_score": 0
+      },
+      "mechanics": [
+        "damage_amplification",
+        "weapon_enhancement",
+        "conditional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264151/93a0ff69010d7d0af34a0d5cc52419b8.png/show",
+        "alt": "Hawkeye Token",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "rampaging_radiation",
+      "name": "Rampaging Radiation",
+      "slot": 4,
+      "game8_tier": "B",
+      "effect": {
+        "description": "Casting abilities grants the rampage effect: lose 4.2% of max health once every 2s and deal +2.8% damage for 10s. Stacks 3x. (this effect can only take effect when health is greater than 30%.)",
+        "parsed_values": {
+          "health_threshold": 30,
+          "damage_bonus": 2.8,
+          "duration_seconds": 2,
+          "cooldown_seconds": 10,
+          "max_stacks": 3,
+          "max_damage_bonus": 8.399999999999999
+        },
+        "conditions": [
+          "when health is greater than 30%"
+        ],
+        "triggers": [
+          "Casting abilities grants the rampage effect: lose 4"
+        ]
+      },
+      "stats": {
+        "percentages": [
+          "4.2%",
+          "+2.8%",
+          "30%"
+        ],
+        "durations": [
+          "2s",
+          "10s"
+        ],
+        "stacks": {
+          "max_stacks": 3,
+          "stack_description": "Stacks 3x"
+        }
+      },
+      "categories": {
+        "primary": "offense",
+        "secondary": [
+          "stacking"
+        ],
+        "playstyle": [
+          "dps",
+          "burst"
+        ],
+        "trigger_type": "on_ability",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "dps builds",
+          "damage optimization"
+        ],
+        "synergizes_with": [
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [],
+        "skill_floor": "medium",
+        "skill_ceiling": "high",
+        "power_score": 22.4
+      },
+      "mechanics": [
+        "stacking",
+        "damage_amplification",
+        "healing",
+        "conditional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264180/2e99e1dd9906e5d24889e372ff89d2fc.png/show",
+        "alt": "Rampaging Radiation",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "talisman_of_inspiration",
+      "name": "Talisman of Inspiration",
+      "slot": 4,
+      "game8_tier": "B",
+      "effect": {
+        "description": "Deal +6.3% damage while receiving continuous healing.",
+        "parsed_values": {
+          "damage_bonus": 6.3
+        },
+        "conditions": [
+          "while receiving continuous healing"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "+6.3%"
+        ]
+      },
+      "categories": {
+        "primary": "offense",
+        "secondary": [],
+        "playstyle": [
+          "dps",
+          "burst"
+        ],
+        "trigger_type": "conditional",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "dps builds",
+          "damage optimization"
+        ],
+        "synergizes_with": [],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 12.6
+      },
+      "mechanics": [
+        "damage_amplification",
+        "healing",
+        "conditional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264200/ea32a6633bf2e244b0a13621f421fd48.png/show",
+        "alt": "Talisman of Inspiration",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "lightrich_ground",
+      "name": "Light-Rich Ground",
+      "slot": 4,
+      "game8_tier": "B",
+      "effect": {
+        "description": "Abilities deal +9.44% damage while sprinting.",
+        "parsed_values": {
+          "damage_bonus": 9.44
+        },
+        "conditions": [
+          "while sprinting"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "+9.44%"
+        ]
+      },
+      "categories": {
+        "primary": "offense",
+        "secondary": [],
+        "playstyle": [
+          "dps",
+          "burst"
+        ],
+        "trigger_type": "conditional",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "dps builds",
+          "damage optimization"
+        ],
+        "synergizes_with": [],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 18.9
+      },
+      "mechanics": [
+        "damage_amplification",
+        "conditional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264170/f6d7c8107c17b4ab68e89fd2059dffde.png/show",
+        "alt": "Light-Rich Ground",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "illuminated_ground",
+      "name": "Illuminated Ground",
+      "slot": 4,
+      "game8_tier": "B",
+      "effect": {
+        "description": "Casting signature abilities while stationary grants +12.6% weapon damage bonus for 6s.",
+        "parsed_values": {
+          "damage_bonus": 12.6,
+          "duration_seconds": 6
+        },
+        "conditions": [
+          "while stationary grants +12"
+        ],
+        "triggers": [
+          "Casting signature abilities while stationary grants +12"
+        ]
+      },
+      "stats": {
+        "percentages": [
+          "+12.6%"
+        ],
+        "durations": [
+          "6s"
+        ]
+      },
+      "categories": {
+        "primary": "offense",
+        "secondary": [
+          "positional"
+        ],
+        "playstyle": [
+          "dps",
+          "burst"
+        ],
+        "trigger_type": "on_ability",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "dps builds",
+          "damage optimization"
+        ],
+        "synergizes_with": [
+          "weapon-focused builds",
+          "high attack speed",
+          "active playstyles",
+          "combo builds"
+        ],
+        "countered_by": [
+          "mobile enemies",
+          "forced movement"
+        ],
+        "skill_floor": "medium",
+        "skill_ceiling": "high",
+        "power_score": 31.2
+      },
+      "mechanics": [
+        "damage_amplification",
+        "ability_enhancement",
+        "weapon_enhancement",
+        "conditional",
+        "positional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264159/f30005638c02c8f998f612a022ce9ac4.png/show",
+        "alt": "Illuminated Ground",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "inverted_vengeance",
+      "name": "Inverted Vengeance",
+      "slot": 4,
+      "game8_tier": "B",
+      "effect": {
+        "description": "Gain +(current shield value/initial shield value) 5.25% damage bonus while shielded, up to 7%.",
+        "parsed_values": {
+          "damage_bonus": 5.25,
+          "shield_value": 7
+        },
+        "conditions": [
+          "while shielded, up to 7%"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "5.25%",
+          "7%"
+        ]
+      },
+      "categories": {
+        "primary": "offense",
+        "secondary": [],
+        "playstyle": [
+          "dps",
+          "burst"
+        ],
+        "trigger_type": "conditional",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "dps builds",
+          "damage optimization"
+        ],
+        "synergizes_with": [],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 18.9
+      },
+      "mechanics": [
+        "shield",
+        "damage_amplification",
+        "conditional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264168/f9f05968cbd93bd5b7e0975b11cefe56.png/show",
+        "alt": "Inverted Vengeance",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "upright_survival",
+      "name": "Upright Survival",
+      "slot": 4,
+      "game8_tier": "B",
+      "effect": {
+        "description": "Gain +7% movement speed and +8.75% damage when your shield breaks.",
+        "parsed_values": {
+          "damage_bonus": 8.75,
+          "shield_value": 8.75
+        },
+        "conditions": [
+          "when your shield breaks"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "+7%",
+          "+8.75%"
+        ]
+      },
+      "categories": {
+        "primary": "shield",
+        "secondary": [],
+        "playstyle": [
+          "mobile"
+        ],
+        "trigger_type": "conditional",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [],
+        "synergizes_with": [],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 28
+      },
+      "mechanics": [
+        "shield",
+        "mobility",
+        "conditional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264211/fc3a64d8d5003e69d19448648d3bbe4b.png/show",
+        "alt": "Upright Survival",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "bellicose_subgravity",
+      "name": "Bellicose Subgravity",
+      "slot": 4,
+      "game8_tier": "C",
+      "effect": {
+        "description": "Gain +8.75% reload speed and +10.5% weapon damage while airborne.",
+        "parsed_values": {
+          "damage_bonus": 10.5
+        },
+        "conditions": [
+          "while airborne"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "+8.75%",
+          "+10.5%"
+        ]
+      },
+      "categories": {
+        "primary": "weapon",
+        "secondary": [
+          "reload",
+          "positional"
+        ],
+        "playstyle": [],
+        "trigger_type": "conditional",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [],
+        "synergizes_with": [
+          "weapon-focused builds",
+          "high attack speed"
+        ],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 21
+      },
+      "mechanics": [
+        "weapon_enhancement",
+        "mobility",
+        "conditional",
+        "positional"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264142/02a8fb31c96293fae1d1150d9e91b261.png/show",
+        "alt": "Bellicose Subgravity",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "inverted_survival",
+      "name": "Inverted Survival",
+      "slot": 4,
+      "game8_tier": "C",
+      "effect": {
+        "description": "Gain +8.4% reload speed and +1.75% movement speed for every 25% health missing.",
+        "parsed_values": {
+          "health_threshold": 25
+        },
+        "conditions": [],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "+8.4%",
+          "+1.75%",
+          "25%"
+        ]
+      },
+      "categories": {
+        "primary": "healing",
+        "secondary": [
+          "reload"
+        ],
+        "playstyle": [
+          "mobile"
+        ],
+        "trigger_type": "passive",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "support builds",
+          "team play"
+        ],
+        "synergizes_with": [],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 0
+      },
+      "mechanics": [
+        "healing",
+        "weapon_enhancement",
+        "mobility"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264165/98e99a43847d67b10a5d0c58a2e5ada2.png/show",
+        "alt": "Inverted Survival",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    },
+    {
+      "id": "resonating_transit",
+      "name": "Resonating Transit",
+      "slot": 4,
+      "game8_tier": "C",
+      "effect": {
+        "description": "When both equipped weapons are the same element, they deal +11.55% elemental damage to matching shields.",
+        "parsed_values": {
+          "damage_bonus": 11.55
+        },
+        "conditions": [
+          "When both equipped weapons are the same element, they deal +11"
+        ],
+        "triggers": []
+      },
+      "stats": {
+        "percentages": [
+          "+11.55%"
+        ]
+      },
+      "categories": {
+        "primary": "offense",
+        "secondary": [],
+        "playstyle": [
+          "dps",
+          "burst"
+        ],
+        "trigger_type": "conditional",
+        "effect_type": "buff"
+      },
+      "gameplay_info": {
+        "best_for": [
+          "dps builds",
+          "damage optimization"
+        ],
+        "synergizes_with": [
+          "weapon-focused builds",
+          "high attack speed"
+        ],
+        "countered_by": [],
+        "skill_floor": "low",
+        "skill_ceiling": "low",
+        "power_score": 23.1
+      },
+      "mechanics": [
+        "shield",
+        "damage_amplification",
+        "weapon_enhancement",
+        "conditional",
+        "elemental"
+      ],
+      "icon": {
+        "url": "https://img.game8.co/4264185/2b6da2e4eace707ee79cc442a523e0b0.png/show",
+        "alt": "Resonating Transit",
+        "extraction_method": "local_html_data_src"
+      },
+      "source": "artifact_scraper"
+    }
+  ]
+}

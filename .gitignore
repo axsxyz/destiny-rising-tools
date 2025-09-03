@@ -1,0 +1,15 @@
+# Node modules
+node_modules/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+
+# Local settings
+*.local.json
+
+# Vercel
+.vercel
+
