@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destiny Rising - Artifact Theorycrafting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>">
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/dist/lenis.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- Background Effects -->
+        <div class="background-effects">
+            <div class="stars"></div>
+            <div class="nebula"></div>
+            <div class="particles"></div>
+        </div>
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🎯</span>
+                    <h1>DESTINY RISING</h1>
+                    <span class="subtitle">ARTIFACT THEORYCRAFTING</span>
+                </div>
+                <div class="header-stats">
+                    <div class="stat-item">
+                        <span class="stat-value" id="total-artifacts">80</span>
+                        <span class="stat-label">ARTIFACTS</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value" id="build-power">0</span>
+                        <span class="stat-label">BUILD POWER</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Build Slots Section -->
+            <section class="build-section">
+                <h2 class="section-title">
+                    <span class="title-icon">⚡</span>
+                    ARTIFACT LOADOUT
+                </h2>
+                
+                <div class="build-slots">
+                    <div class="slot-container" data-slot="1">
+                        <div class="slot-header">
+                            <span class="slot-number">01</span>
+                            <span class="slot-name">DEFENSE</span>
+                        </div>
+                        <div class="artifact-slot empty" id="slot-1">
+                            <div class="slot-placeholder">
+                                <div class="placeholder-number">01</div>
+                                <span class="placeholder-text">CLICK TO EQUIP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slot-container" data-slot="2">
+                        <div class="slot-header">
+                            <span class="slot-number">02</span>
+                            <span class="slot-name">UTILITY</span>
+                        </div>
+                        <div class="artifact-slot empty" id="slot-2">
+                            <div class="slot-placeholder">
+                                <div class="placeholder-number">02</div>
+                                <span class="placeholder-text">CLICK TO EQUIP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slot-container" data-slot="3">
+                        <div class="slot-header">
+                            <span class="slot-number">03</span>
+                            <span class="slot-name">OFFENSE</span>
+                        </div>
+                        <div class="artifact-slot empty" id="slot-3">
+                            <div class="slot-placeholder">
+                                <div class="placeholder-number">03</div>
+                                <span class="placeholder-text">CLICK TO EQUIP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slot-container" data-slot="4">
+                        <div class="slot-header">
+                            <span class="slot-number">04</span>
+                            <span class="slot-name">ABILITY</span>
+                        </div>
+                        <div class="artifact-slot empty" id="slot-4">
+                            <div class="slot-placeholder">
+                                <div class="placeholder-number">04</div>
+                                <span class="placeholder-text">CLICK TO EQUIP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Build Stats -->
+                <div class="build-stats" id="build-stats">
+                    <div class="stats-header">
+                        <h3>BUILD ANALYSIS</h3>
+                        <div class="power-level-badge" id="power-level">COMMON</div>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">💥</div>
+                            <div class="stat-info">
+                                <span class="stat-name">Damage Bonus</span>
+                                <span class="stat-value" id="damage-bonus">+0%</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">🛡️</div>
+                            <div class="stat-info">
+                                <span class="stat-name">Damage Resistance</span>
+                                <span class="stat-value" id="damage-resistance">+0%</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">🔋</div>
+                            <div class="stat-info">
+                                <span class="stat-name">Shield Power</span>
+                                <span class="stat-value" id="shield-power">+0%</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">❤️</div>
+                            <div class="stat-info">
+                                <span class="stat-name">Healing</span>
+                                <span class="stat-value" id="healing-power">+0%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="synergy-bar">
+                        <div class="synergy-label">SYNERGY</div>
+                        <div class="synergy-progress">
+                            <div class="synergy-fill" id="synergy-fill" style="width: 0%"></div>
+                        </div>
+                        <div class="synergy-value" id="synergy-value">0%</div>
+                    </div>
+                    
+                    <div class="equipped-artifacts" id="equipped-artifacts">
+                        <h4>EQUIPPED ARTIFACTS</h4>
+                        <div id="equipped-artifacts-list">
+                            <!-- Equipped artifacts descriptions will appear here -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Artifact Browser Section -->
+            <section class="browser-section">
+                <div class="browser-header">
+                    <h2 class="section-title">
+                        <span class="title-icon">🔍</span>
+                        ARTIFACT DATABASE
+                    </h2>
+                    
+                    <div class="browser-controls">
+                        <div class="search-container">
+                            <input type="text" id="search-input" placeholder="Search artifacts..." class="search-input">
+                            <div class="search-icon">🔍</div>
+                        </div>
+                        
+                        <div class="filter-container">
+                            <select id="slot-filter" class="filter-select">
+                                <option value="">All Slots</option>
+                                <option value="1">Slot 1</option>
+                                <option value="2">Slot 2</option>
+                                <option value="3">Slot 3</option>
+                                <option value="4">Slot 4</option>
+                            </select>
+                            
+                            <select id="category-filter" class="filter-select">
+                                <option value="">All Categories</option>
+                                <option value="defense">Defense</option>
+                                <option value="offense">Offense</option>
+                                <option value="healing">Healing</option>
+                                <option value="shield">Shield</option>
+                                <option value="weapon">Weapon</option>
+                                <option value="ability">Ability</option>
+                            </select>
+                            
+                            <select id="sort-filter" class="filter-select">
+                                <option value="power_score">Power Score</option>
+                                <option value="name">Name</option>
+                                <option value="game8_tier">Game8 Tier</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artifacts-grid" id="artifacts-grid">
+                    <!-- Artifacts will be loaded here dynamically -->
+                </div>
+
+                <div class="load-more-container">
+                    <button class="load-more-btn" id="load-more">LOAD MORE ARTIFACTS</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Artifact Details Modal -->
+        <div class="modal-overlay" id="artifact-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="modal-title">Artifact Details</h3>
+                    <button class="modal-close" id="modal-close">✕</button>
+                </div>
+                <div class="modal-body" id="modal-body">
+                    <!-- Artifact details will be populated here -->
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-secondary" id="modal-cancel">CANCEL</button>
+                    <button class="btn-primary" id="modal-equip">EQUIP ARTIFACT</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Overlay -->
+        <div class="loading-overlay" id="loading-overlay">
+            <div class="loading-spinner">
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+            </div>
+            <div class="loading-text">LOADING ARTIFACTS...</div>
+        </div>
+
+        <!-- Toast Notifications -->
+        <div class="toast-container" id="toast-container"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <span class="made-with">Made with</span>
+                <span class="heart">♥</span>
+                <span class="author">by axs</span>
+            </div>
+            <div class="footer-right">
+                <span class="data-source">Data sourced from</span>
+                <a href="https://game8.co" target="_blank" rel="noopener noreferrer" class="game8-link">
+                    game8.co
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
