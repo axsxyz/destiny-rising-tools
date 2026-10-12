@@ -13,3 +13,9 @@ node_modules/
 # Vercel
 .vercel
 
+
+# Saved third-party pages used as scraper input (not redistributed)
+game8/
+
+# Local notes
+*.local.md
