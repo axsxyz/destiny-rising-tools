@@ -1,13 +1,12 @@
 {
-  "name": "destiny-rising-theorycraft",
+  "name": "destiny-rising-tools",
   "version": "1.0.0",
-  "description": "Destiny Rising Artifact Theorycrafting Tool",
+  "description": "Artifact browser and build calculator for Destiny Rising",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js",
-    "scrape": "node scraper.js",
-    "clean": "node scripts/cleanData.js"
+    "dev": "nodemon server.js",
+    "scrape": "node artifact_scraper.js"
   },
   "keywords": [
     "destiny-rising",
@@ -23,5 +22,6 @@
   },
   "devDependencies": {
     "nodemon": "^3.0.2"
-  }
+  },
+  "license": "MIT"
 }
